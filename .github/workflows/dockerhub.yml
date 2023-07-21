@@ -36,7 +36,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ${{ secrets.DOCKER_HUB_USERNAME }}/debian10_openjdk11_basic
+          images: ${{ secrets.DOCKER_HUB_USERNAME }}/debian11_openjdk17_basic
           tags: |
             type=raw,value={{date 'YYYY.MM.DD'}}
             type=raw,value=latest
